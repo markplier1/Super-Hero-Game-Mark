@@ -8,18 +8,25 @@ public class Superhero {
   private int weaponStrength;
 
   // TODO #1: Add missing constructors. Note that the life attribute should default to true and the weaponStrength attribute should default to 0.
-  public void SuperHero(boolean life, double weaponStrength) {
-    life = true;
-    weaponStrength = Math.random()*10+1;
+  public SuperHero(String name, String costume, String weapon) {
+    this.name = name;
+    this.costume = costume;
+    this.weapon = weapon;
+    this.life = true;
+    this.weaponStrength = Math.random() * 10+1; 
   }
   // TODO #2: Add missing methods.
-  public void selfSuperHero(boolean life, double weaponStrength){
-    life = true;
-    Scanner scan = new Scanner(System.in);  // Create a Scanner object
+  public selfSuperHero(String name, String costume, String weapon){
+    Scanner scan = new Scanner(System.in);
     System.out.println("Enter weapon strength");
     weaponStrength = scan.nextDouble();
-    System.out.println(weaponStrength);
-    scan.close();  // Output user input
+    System.out.println(weaponStrength);  
+    this.name = name;
+    this.costume = costume;
+    this.weapon = weapon;
+    this.life = true;
+    this.weaponStrength = scan.nextInt();
+    scan.close();
   }
   
   // TODO #3: Including a toString() method (see topic 1.15 Strings in the CSAwesome2 textbook) to help with printing out the Superhero details.
