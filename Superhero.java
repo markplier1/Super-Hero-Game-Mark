@@ -1,5 +1,4 @@
 
-    import java.util.Scanner;
 public class Superhero {
   private String name;
   private String costume;
