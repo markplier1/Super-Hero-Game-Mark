@@ -7,16 +7,16 @@ public class Main {
      * nicely
      */
     Superhero placeholder = new Superhero();
-    Superhero spiderMan1 = new Superhero("Spiderman", "Red suit", "Super Web", 10);
+    Superhero spiderMan1 = new Superhero("Spiderman", "Red suit", "Super Web", 5);
     System.out.println(spiderMan1);
-    Superhero batman1 = new Superhero("Batman", "Batsuit", "Super Strength", 1);
+    Superhero batman1 = new Superhero("Batman", "Batsuit", "Super Strength", 5);
     //spiderMan1.loseLife();
     superheroFight(spiderMan1, batman1);
     System.out.println(batman1);
 
 
     System.out.println("The Green Goblin shows up...");
-    System.out.println("Spider is killed");
+    System.out.println("Spiderman is killed");
     System.out.println(spiderMan1);
 
 
@@ -39,7 +39,7 @@ public class Main {
         System.out.println(batman1.getName() + " wins with their " + spiderMan1.getWeapon());
       }
       else {
-        System.out.println("It's a draw");
+        System.out.println("Spiderman wins with the help of Iron man");
       }
     }
   }
