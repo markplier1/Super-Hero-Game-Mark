@@ -6,13 +6,27 @@ public class Main {
      * that the following code compiles and so that each superhero's details is printed out
      * nicely
      */
+    Superhero placeholder = new Superhero();
     Superhero spiderMan1 = new Superhero("Spiderman", "Red suit", "Super Web", 10);
     System.out.println(spiderMan1);
     Superhero batman1 = new Superhero("Batman", "Batsuit", "Super Strength", 1);
     //spiderMan1.loseLife();
     superheroFight(spiderMan1, batman1);
     System.out.println(batman1);
-  }
+
+
+    System.out.println("The Green Goblin shows up...");
+    System.out.println("Spider is killed");
+    System.out.println(spiderMan1);
+
+
+    int batmanSpecial =batman1.specialAttack(4);
+    int placeHolderSpecial = placeholder.specialAttack(9001);
+
+    System.out.println(batman1.getName() + " uses his special attack and deals " + batmanSpecial + " damage.");
+    System.out.println(placeholder.getName() + " uses his special attack and deals " + placeHolderSpecial + " damage.");
+
+}
     public static void superheroFight(Superhero spiderMan1, Superhero batman1) {
       System.out.println("Fight");
       System.out.println(spiderMan1.getName() + spiderMan1.getWeapon() + "Strength " + spiderMan1.getWeaponStrength());
