@@ -6,17 +6,11 @@ public class Superhero {
   private int weaponStrength;
 
   // TODO #1: Add missing constructors. Note that the life attribute should default to true and the weaponStrength attribute should default to 0.
-  public Superhero(String name,String costume, String weapon) {
-    this.name = name;
-    this.weapon = weapon;
-    this.weaponStrength = (int) (Math.random() * 10) + 1; // Random integer from 1 to 10
-  }
-
-  /*public SuperheroSelf(String name, String weapon, int weaponStrength) {
+  public Superhero(String name, String costume, String weapon, int weaponStrength) {
     this.name = name;
     this.weapon = weapon;
     this.weaponStrength = weaponStrength;
-  }*/
+  }
 
   public String getWeapon() {
     return weapon;

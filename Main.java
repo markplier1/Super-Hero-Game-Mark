@@ -6,9 +6,9 @@ public class Main {
      * that the following code compiles and so that each superhero's details is printed out
      * nicely
      */
-    Superhero spiderMan1 = new Superhero("Spiderman", "Red suit", "Super Web");
+    Superhero spiderMan1 = new Superhero("Spiderman", "Red suit", "Super Web", 10);
     System.out.println(spiderMan1);
-    Superhero batman1 = new Superhero("Batman", "Batsuit", "Super Strength");
+    Superhero batman1 = new Superhero("Batman", "Batsuit", "Super Strength", 1);
     //spiderMan1.loseLife();
     superheroFight(spiderMan1, batman1);
     System.out.println(batman1);
