@@ -9,6 +9,7 @@ public class Superhero {
   public Superhero(String name, String costume, String weapon, int weaponStrength) {
     this.name = name;
     this.weapon = weapon;
+    this.costume = costume;
     this.weaponStrength = weaponStrength;
   }
 
